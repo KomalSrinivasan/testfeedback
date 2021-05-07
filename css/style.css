@@ -32,6 +32,7 @@ a .active{
 @media screen and (min-width: 320px) and (max-width: 1200px){
 	.box{
 		width: 5%;
+		font-size: 3px;
 
 	}
 }
