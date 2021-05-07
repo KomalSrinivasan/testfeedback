@@ -7,14 +7,14 @@ body , html{
 a .active{
 	background-color: red;
 }
-.container{
+/* .container{
 	width: 100%;
 	height: auto;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	flex-flow: wrap;
-}
+} */
 
 #box{
 	/*width: 1024px;
