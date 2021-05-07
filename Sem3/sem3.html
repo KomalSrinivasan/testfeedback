@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>SEM - 3|GMRIT ECE | STUDENT FEEDBACK FORM</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="GMRIT Feedback Form">
+    <meta name="author" content="Komal Srinivasan , Affix Designs">
+    <meta name="keywords" content="GMRIT ECE, Feedback Form">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+      <style type="text/css">
+      body{
+        background-color: rgba(232,126,4,1);
+      }
+
+      @media screen and (min-width: 330px){
+        #box{
+          width: 96%;
+        }
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <center>
+      <form method="POST" action="sem3feedback.php" enctype="multipart/form-data">
+        <a href="sem3.html"><img src="../img/gmrit_logo.jpg" style="height: 100px;width: 1500px;"></a>
+        <h1 style="color: white;"><u>STUDENT FEEDBACK FORM</u></h1>
+        <nav>
+          <ul>
+            <li><a href="../Sem3/sem3.html">SEM-3</a></li>
+            <li><a href="../Sem4/sem4.html">SEM-4</a></li>
+            <li><a href="../Sem5/sem5.html">SEM-5</a></li>
+            <li><a href="../Sem6/sem6.html">SEM-6</a></li>
+            <li><a href="../Sem7/sem7.html">SEM-7</a></li>
+            <li><a href="../Sem8/sem8.html">SEM-8</a></li>
+          </ul>
+        </nav>
+        <h2 style="color: white;"><u>SEMESTER - 3</u></h2>
+        <table bgcolor="white">
+          <div id="box" style="font-size: 20px;color: white;">
+            <ul>
+              <li>*5 - Excellent</li>
+              <li>*4 - Very Good</li>
+              <li>*3 - Good</li>
+              <li>*2 - Bad</li>
+              <li>*1 - Very Bad</li>
+            </ul>
+          </div>
+          <tr>
+            <td><b>FIRST NAME</b></td>
+            <td><input type="text" name="fname" placeholder="First Name" required></td>
+          </tr>
+          <tr>
+            <td><b>LAST NAME</b></td>
+            <td><input type="text" name="lname" placeholder="Last Name" required></td>
+          </tr>
+          <tr>
+            <td><b>JNTU NUMBER</b></td>
+            <td><input type="text" name="jntuno" placeholder="JNTU Number" required></td>
+          </tr>
+          <tr>
+            <td><b>YEAR OF ADMISSION</b></td>
+            <td><input type="text" name="year" placeholder="Year of Admission" required></td>
+          </tr>
+          <tr>
+            <td><b>EMAIL ID</b></td>
+            <td><input type="email" name="email" placeholder="Email ID" required></td>
+          </tr>
+          <tr>
+            <td><b>MOBILE NUMBER</b></td>
+            <td><input type="text" id="num" name="phone_no" placeholder="10 digits number" required onchange="return verifynumber(this.value);">
+            <span id="sign_error" style="color: red; font-size: 15px;"></span></td>
+          </tr>
+          <tr>
+            <td><b>GENDER</b></td>
+            <td><input type="radio" name="gender" value="male" required="">MALE
+              <input type="radio" name="gender" value="female" required="">FEMALE</td>
+          </tr>
+          <tr>
+            <td><b>SEMESTER</b></td>
+            <td><select name="semester" required="">
+                <option>3</option>
+              </select></td>
+          </tr>
+          <tr>
+            <td>
+              <center><b>Complex Variables:<br>(16MA304)</b></center>
+            </td>
+            <td>
+              <table border="5" bgcolor="white" class="table table-dark">
+                <tr>
+                  <th>COURSE OUTCOMES</th>
+                  <th>5</th>
+                  <th>4</th>
+                  <th>3</th>
+                  <th>2</th>
+                  <th>1</th>
+
+                </tr>
+                <tr>
+                  <td>1. Implement the knowledge of Z-Transformations in signal analysis and solve difference equations</td>
+                  <td><input type="radio" name="CO1_cv" value="5" required></td>
+                  <td><input type="radio" name="CO1_cv" value="4" required></td>
+                  <td><input type="radio" name="CO1_cv" value="3" required></td>
+                  <td><input type="radio" name="CO1_cv" value="2" required></td>
+                  <td><input type="radio" name="CO1_cv" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>2. Define and assess limits and continuity for complex variable functions as well as consequences of
+                    continuity</td>
+                  <td><input type="radio" name="CO2_cv" value="5" required></td>
+                  <td><input type="radio" name="CO2_cv" value="4" required></td>
+                  <td><input type="radio" name="CO2_cv" value="3" required></td>
+                  <td><input type="radio" name="CO2_cv" value="2" required></td>
+                  <td><input type="radio" name="CO2_cv" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>3. Identify the significance of differentiability and Analyticity for complex variable functions and be familiar
+                    with the Cauchy-Riemann equations</td>
+                  <td><input type="radio" name="CO3_cv" value="5" required></td>
+                  <td><input type="radio" name="CO3_cv" value="4" required></td>
+                  <td><input type="radio" name="CO3_cv" value="3" required></td>
+                  <td><input type="radio" name="CO3_cv" value="2" required></td>
+                  <td><input type="radio" name="CO3_cv" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>4. Compute integrals along a path in the complex plane using the Cauchy's theorem and Residue theorem</td>
+                  <td><input type="radio" name="CO4_cv" value="5" required></td>
+                  <td><input type="radio" name="CO4_cv" value="4" required></td>
+                  <td><input type="radio" name="CO4_cv" value="3" required></td>
+                  <td><input type="radio" name="CO4_cv" value="2" required></td>
+                  <td><input type="radio" name="CO4_cv" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>5. Classify the singularities of complex variable function by expanding them into Taylor’s and Laurent’s
+                    series</td>
+                  <td><input type="radio" name="CO5_cv" value="5" required></td>
+                  <td><input type="radio" name="CO5_cv" value="4" required></td>
+                  <td><input type="radio" name="CO5_cv" value="3" required></td>
+                  <td><input type="radio" name="CO5_cv" value="2" required></td>
+                  <td><input type="radio" name="CO5_cv" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>6. Interpret various types of transformations in complex plane</td>
+                  <td><input type="radio" name="CO6_cv" value="5" required></td>
+                  <td><input type="radio" name="CO6_cv" value="4" required></td>
+                  <td><input type="radio" name="CO6_cv" value="3" required></td>
+                  <td><input type="radio" name="CO6_cv" value="2" required></td>
+                  <td><input type="radio" name="CO6_cv" value="1" required></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <center><b>Digital Electronics:<br>(16EC302)</b></center>
+            </td>
+            <td>
+              <table border="1" bgcolor="white" class="table table-dark">
+                <tr>
+                  <th>COURSE OUTCOMES</th>
+                  <th>5</th>
+                  <th>4</th>
+                  <th>3</th>
+                  <th>2</th>
+                  <th>1</th>
+
+                </tr>
+                <tr>
+                  <td>1. Illustrate the conversion of a number from one number system to another</td>
+                  <td><input type="radio" name="CO1_de" value="5" required></td>
+                  <td><input type="radio" name="CO1_de" value="4" required></td>
+                  <td><input type="radio" name="CO1_de" value="3" required></td>
+                  <td><input type="radio" name="CO1_de" value="2" required></td>
+                  <td><input type="radio" name="CO1_de" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>2. Identify Boolean algebra and K-map as a tool to simplify and design logic circuits</td>
+                  <td><input type="radio" name="CO2_de" value="5" required></td>
+                  <td><input type="radio" name="CO2_de" value="4" required></td>
+                  <td><input type="radio" name="CO2_de" value="3" required></td>
+                  <td><input type="radio" name="CO2_de" value="2" required></td>
+                  <td><input type="radio" name="CO2_de" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>3. Implement combinational circuits using gates</td>
+                  <td><input type="radio" name="CO3_de" value="5" required></td>
+                  <td><input type="radio" name="CO3_de" value="4" required></td>
+                  <td><input type="radio" name="CO3_de" value="3" required></td>
+                  <td><input type="radio" name="CO3_de" value="2" required></td>
+                  <td><input type="radio" name="CO3_de" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>4. Design PLDs and Flip-flops</td>
+                  <td><input type="radio" name="CO4_de" value="5" required></td>
+                  <td><input type="radio" name="CO4_de" value="4" required></td>
+                  <td><input type="radio" name="CO4_de" value="3" required></td>
+                  <td><input type="radio" name="CO4_de" value="2" required></td>
+                  <td><input type="radio" name="CO4_de" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>5. Implement various types of counters and shift registers</td>
+                  <td><input type="radio" name="CO5_de" value="5" required></td>
+                  <td><input type="radio" name="CO5_de" value="4" required></td>
+                  <td><input type="radio" name="CO5_de" value="3" required></td>
+                  <td><input type="radio" name="CO5_de" value="2" required></td>
+                  <td><input type="radio" name="CO5_de" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>6. Attribute innovative designs by modifying the traditional design techniques</td>
+                  <td><input type="radio" name="CO6_de" value="5" required></td>
+                  <td><input type="radio" name="CO6_de" value="4" required></td>
+                  <td><input type="radio" name="CO6_de" value="3" required></td>
+                  <td><input type="radio" name="CO6_de" value="2" required></td>
+                  <td><input type="radio" name="CO6_de" value="1" required></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <center><b>Electronic Devices and Circuits:<br>(16EC303)</b>
+            </td>
+            <td>
+              <table border="1" bgcolor="white" class="table table-dark">
+                <tr>
+                  <th>COURSE OUTCOMES</th>
+                  <th>5</th>
+                  <th>4</th>
+                  <th>3</th>
+                  <th>2</th>
+                  <th>1</th>
+
+                </tr>
+                <tr>
+                  <td>1. Explain the properties of semiconductor materials in the formation of PN diode and Zener diode.</td>
+                  <td><input type="radio" name="CO1_edc" value="5" required></td>
+                  <td><input type="radio" name="CO1_edc" value="4" required></td>
+                  <td><input type="radio" name="CO1_edc" value="3" required></td>
+                  <td><input type="radio" name="CO1_edc" value="2" required></td>
+                  <td><input type="radio" name="CO1_edc" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>2. Classify the V-I characteristics of CB & CE configurations</td>
+                  <td><input type="radio" name="CO2_edc" value="5" required></td>
+                  <td><input type="radio" name="CO2_edc" value="4" required></td>
+                  <td><input type="radio" name="CO2_edc" value="3" required></td>
+                  <td><input type="radio" name="CO2_edc" value="2" required></td>
+                  <td><input type="radio" name="CO2_edc" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>3. Design various biasing circuits to achieve the required stability in transistor amplifiers</td>
+                  <td><input type="radio" name="CO3_edc" value="5" required></td>
+                  <td><input type="radio" name="CO3_edc" value="4" required></td>
+                  <td><input type="radio" name="CO3_edc" value="3" required></td>
+                  <td><input type="radio" name="CO3_edc" value="2" required></td>
+                  <td><input type="radio" name="CO3_edc" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>4. Illustrate the operation of FETs and special diodes for different applications</td>
+                  <td><input type="radio" name="CO4_edc" value="5" required></td>
+                  <td><input type="radio" name="CO4_edc" value="4" required></td>
+                  <td><input type="radio" name="CO4_edc" value="3" required></td>
+                  <td><input type="radio" name="CO4_edc" value="2" required></td>
+                  <td><input type="radio" name="CO4_edc" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>5. Design half wave, full wave rectifiers with and without filters for different applications</td>
+                  <td><input type="radio" name="CO5_edc" value="5" required></td>
+                  <td><input type="radio" name="CO5_edc" value="4" required></td>
+                  <td><input type="radio" name="CO5_edc" value="3" required></td>
+                  <td><input type="radio" name="CO5_edc" value="2" required></td>
+                  <td><input type="radio" name="CO5_edc" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>6. Design regulated power supply using Zener diode and transistors</td>
+                  <td><input type="radio" name="CO6_edc" value="5" required></td>
+                  <td><input type="radio" name="CO6_edc" value="4" required></td>
+                  <td><input type="radio" name="CO6_edc" value="3" required></td>
+                  <td><input type="radio" name="CO6_edc" value="2" required></td>
+                  <td><input type="radio" name="CO6_edc" value="1" required></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <center><b>Linear Circuit Analysis:<br>(16EC304)</b></center>
+            </td>
+            <td>
+              <table border="1" bgcolor="white" class="table table-dark">
+                <tr>
+                  <th>COURSE OUTCOMES</th>
+                  <th>5</th>
+                  <th>4</th>
+                  <th>3</th>
+                  <th>2</th>
+                  <th>1</th>
+
+                </tr>
+                <tr>
+                  <td>1. Summarize the characteristics of RL, RC, RLC series and parallel circuits in both time and frequency
+                    domain.</td>
+                  <td><input type="radio" name="CO1_lca" value="5" required></td>
+                  <td><input type="radio" name="CO1_lca" value="4" required></td>
+                  <td><input type="radio" name="CO1_lca" value="3" required></td>
+                  <td><input type="radio" name="CO1_lca" value="2" required></td>
+                  <td><input type="radio" name="CO1_lca" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>2. Find the power and power factor of RL, RC, RLC series and parallel circuits.</td>
+                  <td><input type="radio" name="CO2_lca" value="5" required></td>
+                  <td><input type="radio" name="CO2_lca" value="4" required></td>
+                  <td><input type="radio" name="CO2_lca" value="3" required></td>
+                  <td><input type="radio" name="CO2_lca" value="2" required></td>
+                  <td><input type="radio" name="CO2_lca" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>3. Design resonant circuits which are used in wireless transmission and communication networks</td>
+                  <td><input type="radio" name="CO3_lca" value="5" required></td>
+                  <td><input type="radio" name="CO3_lca" value="4" required></td>
+                  <td><input type="radio" name="CO3_lca" value="3" required></td>
+                  <td><input type="radio" name="CO3_lca" value="2" required></td>
+                  <td><input type="radio" name="CO3_lca" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>4. Implement the theorems to simplify complex networks</td>
+                  <td><input type="radio" name="CO4_lca" value="5" required></td>
+                  <td><input type="radio" name="CO4_lca" value="4" required></td>
+                  <td><input type="radio" name="CO4_lca" value="3" required></td>
+                  <td><input type="radio" name="CO4_lca" value="2" required></td>
+                  <td><input type="radio" name="CO4_lca" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>5. Outline the transient analysis in electrical circuits and to analyze the system stability</td>
+                  <td><input type="radio" name="CO5_lca" value="5" required></td>
+                  <td><input type="radio" name="CO5_lca" value="4" required></td>
+                  <td><input type="radio" name="CO5_lca" value="3" required></td>
+                  <td><input type="radio" name="CO5_lca" value="2" required></td>
+                  <td><input type="radio" name="CO5_lca" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>6. Determine the parameters of two port networks to analyze the performance of transmission lines.</td>
+                  <td><input type="radio" name="CO6_lca" value="5" required></td>
+                  <td><input type="radio" name="CO6_lca" value="4" required></td>
+                  <td><input type="radio" name="CO6_lca" value="3" required></td>
+                  <td><input type="radio" name="CO6_lca" value="2" required></td>
+                  <td><input type="radio" name="CO6_lca" value="1" required></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <center><b>Random Variables & Stochastic Processes:<br>(16EC305)</b></center>
+            </td>
+            <td>
+              <table border="1" bgcolor="white" class="table table-dark">
+                <tr>
+                  <th>COURSE OUTCOMES</th>
+                  <th>5</th>
+                  <th>4</th>
+                  <th>3</th>
+                  <th>2</th>
+                  <th>1</th>
+
+                </tr>
+                <tr>
+                  <td>1. Illustrate probability concepts and Bayes theorem</td>
+                  <td><input type="radio" name="CO1_rvsp" value="5" required></td>
+                  <td><input type="radio" name="CO1_rvsp" value="4" required></td>
+                  <td><input type="radio" name="CO1_rvsp" value="3" required></td>
+                  <td><input type="radio" name="CO1_rvsp" value="2" required></td>
+                  <td><input type="radio" name="CO1_rvsp" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>2. Find the distribution and density functions of random variables</td>
+                  <td><input type="radio" name="CO2_rvsp" value="5" required></td>
+                  <td><input type="radio" name="CO2_rvsp" value="4" required></td>
+                  <td><input type="radio" name="CO2_rvsp" value="3" required></td>
+                  <td><input type="radio" name="CO2_rvsp" value="2" required></td>
+                  <td><input type="radio" name="CO2_rvsp" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>3. Compute various moments of random variables</td>
+                  <td><input type="radio" name="CO3_rvsp" value="5" required></td>
+                  <td><input type="radio" name="CO3_rvsp" value="4" required></td>
+                  <td><input type="radio" name="CO3_rvsp" value="3" required></td>
+                  <td><input type="radio" name="CO3_rvsp" value="2" required></td>
+                  <td><input type="radio" name="CO3_rvsp" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>4. Demonstrate vector random variables and their statistical averages</td>
+                  <td><input type="radio" name="CO4_rvsp" value="5" required></td>
+                  <td><input type="radio" name="CO4_rvsp" value="4" required></td>
+                  <td><input type="radio" name="CO4_rvsp" value="3" required></td>
+                  <td><input type="radio" name="CO4_rvsp" value="2" required></td>
+                  <td><input type="radio" name="CO4_rvsp" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>5. Outline the temporal and spectral characteristics of random processes</td>
+                  <td><input type="radio" name="CO5_rvsp" value="5" required></td>
+                  <td><input type="radio" name="CO5_rvsp" value="4" required></td>
+                  <td><input type="radio" name="CO5_rvsp" value="3" required></td>
+                  <td><input type="radio" name="CO5_rvsp" value="2" required></td>
+                  <td><input type="radio" name="CO5_rvsp" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>6. Summarize noise sources and characteristics</td>
+                  <td><input type="radio" name="CO6_rvsp" value="5" required></td>
+                  <td><input type="radio" name="CO6_rvsp" value="4" required></td>
+                  <td><input type="radio" name="CO6_rvsp" value="3" required></td>
+                  <td><input type="radio" name="CO6_rvsp" value="2" required></td>
+                  <td><input type="radio" name="CO6_rvsp" value="1" required></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <center><b>Signals & Systems:<br>(16EC306)</b></center>
+            </td>
+            <td>
+              <table border="1" bgcolor="white" class="table table-dark">
+                <tr>
+                  <th>COURSE OUTCOMES</th>
+                  <th>5</th>
+                  <th>4</th>
+                  <th>3</th>
+                  <th>2</th>
+                  <th>1</th>
+
+                </tr>
+                <tr>
+                  <td>1. Interpret various types of signals and systems with the basic signal operations</td>
+                  <td><input type="radio" name="CO1_ss" value="5" required></td>
+                  <td><input type="radio" name="CO1_ss" value="4" required></td>
+                  <td><input type="radio" name="CO1_ss" value="3" required></td>
+                  <td><input type="radio" name="CO1_ss" value="2" required></td>
+                  <td><input type="radio" name="CO1_ss" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>2. Explain the concept of orthogonality for periodic signals approximation.</td>
+                  <td><input type="radio" name="CO2_ss" value="5" required></td>
+                  <td><input type="radio" name="CO2_ss" value="4" required></td>
+                  <td><input type="radio" name="CO2_ss" value="3" required></td>
+                  <td><input type="radio" name="CO2_ss" value="2" required></td>
+                  <td><input type="radio" name="CO2_ss" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>3. Implement the various transform techniques for analyzing continuous time signals</td>
+                  <td><input type="radio" name="CO3_ss" value="5" required></td>
+                  <td><input type="radio" name="CO3_ss" value="4" required></td>
+                  <td><input type="radio" name="CO3_ss" value="3" required></td>
+                  <td><input type="radio" name="CO3_ss" value="2" required></td>
+                  <td><input type="radio" name="CO3_ss" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>4. Implement correlation and convolution techniques for various signals</td>
+                  <td><input type="radio" name="CO4_ss" value="5" required></td>
+                  <td><input type="radio" name="CO4_ss" value="4" required></td>
+                  <td><input type="radio" name="CO4_ss" value="3" required></td>
+                  <td><input type="radio" name="CO4_ss" value="2" required></td>
+                  <td><input type="radio" name="CO4_ss" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>5. Find the response of LTI system</td>
+                  <td><input type="radio" name="CO5_ss" value="5" required></td>
+                  <td><input type="radio" name="CO5_ss" value="4" required></td>
+                  <td><input type="radio" name="CO5_ss" value="3" required></td>
+                  <td><input type="radio" name="CO5_ss" value="2" required></td>
+                  <td><input type="radio" name="CO5_ss" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>6. Attribute the concept of sampling theorem and Laplace transform</td>
+                  <td><input type="radio" name="CO6_ss" value="5" required></td>
+                  <td><input type="radio" name="CO6_ss" value="4" required></td>
+                  <td><input type="radio" name="CO6_ss" value="3" required></td>
+                  <td><input type="radio" name="CO6_ss" value="2" required></td>
+                  <td><input type="radio" name="CO6_ss" value="1" required></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <center><b>Digital Electronics Lab:<br>(16EC307)</b></center>
+            </td>
+            <td>
+              <table border="1" bgcolor="white" class="table table-dark">
+                <tr>
+                  <th>COURSE OUTCOMES</th>
+                  <th>5</th>
+                  <th>4</th>
+                  <th>3</th>
+                  <th>2</th>
+                  <th>1</th>
+
+                </tr>
+                <tr>
+                  <td>1. Implement the Universal gates using logic gates</td>
+                  <td><input type="radio" name="CO1_delab" value="5" required></td>
+                  <td><input type="radio" name="CO1_delab" value="4" required></td>
+                  <td><input type="radio" name="CO1_delab" value="3" required></td>
+                  <td><input type="radio" name="CO1_delab" value="2" required></td>
+                  <td><input type="radio" name="CO1_delab" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>2. Implement the logic circuits using Universal gates</td>
+                  <td><input type="radio" name="CO2_delab" value="5" required></td>
+                  <td><input type="radio" name="CO2_delab" value="4" required></td>
+                  <td><input type="radio" name="CO2_delab" value="3" required></td>
+                  <td><input type="radio" name="CO2_delab" value="2" required></td>
+                  <td><input type="radio" name="CO2_delab" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>3. Implement combinational circuits using gates</td>
+                  <td><input type="radio" name="CO3_delab" value="5" required></td>
+                  <td><input type="radio" name="CO3_delab" value="4" required></td>
+                  <td><input type="radio" name="CO3_delab" value="3" required></td>
+                  <td><input type="radio" name="CO3_delab" value="2" required></td>
+                  <td><input type="radio" name="CO3_delab" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>4. Design flip-flop using gates and ICs</td>
+                  <td><input type="radio" name="CO4_delab" value="5" required></td>
+                  <td><input type="radio" name="CO4_delab" value="4" required></td>
+                  <td><input type="radio" name="CO4_delab" value="3" required></td>
+                  <td><input type="radio" name="CO4_delab" value="2" required></td>
+                  <td><input type="radio" name="CO4_delab" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>5. Design and analyze synchronous and asynchronous counter</td>
+                  <td><input type="radio" name="CO5_delab" value="5" required></td>
+                  <td><input type="radio" name="CO5_delab" value="4" required></td>
+                  <td><input type="radio" name="CO5_delab" value="3" required></td>
+                  <td><input type="radio" name="CO5_delab" value="2" required></td>
+                  <td><input type="radio" name="CO5_delab" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>6. Implement shift registers using flip-flops and design an application using registers and counters</td>
+                  <td><input type="radio" name="CO6_delab" value="5" required></td>
+                  <td><input type="radio" name="CO6_delab" value="4" required></td>
+                  <td><input type="radio" name="CO6_delab" value="3" required></td>
+                  <td><input type="radio" name="CO6_delab" value="2" required></td>
+                  <td><input type="radio" name="CO6_delab" value="1" required></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <center><b>Electronic Devices and Circuits Lab:<br>(16EC308)</b></center>
+            </td>
+            <td>
+              <table border="1" bgcolor="white" class="table table-dark">
+                <tr>
+                  <th>COURSE OUTCOMES</th>
+                  <th>5</th>
+                  <th>4</th>
+                  <th>3</th>
+                  <th>2</th>
+                  <th>1</th>
+
+                </tr>
+                <tr>
+                  <td>1. Demonstrate various electronic components and test equipment like multimeter, function generator, and
+                    CRO in order<br> to measure passive components and observe the waveforms</td>
+                  <td><input type="radio" name="CO1_edclab" value="5" required></td>
+                  <td><input type="radio" name="CO1_edclab" value="4" required></td>
+                  <td><input type="radio" name="CO1_edclab" value="3" required></td>
+                  <td><input type="radio" name="CO1_edclab" value="2" required></td>
+                  <td><input type="radio" name="CO1_edclab" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>2. Predict the V-I characteristics of PN junction and Zener diodes</td>
+                  <td><input type="radio" name="CO2_edclab" value="5" required></td>
+                  <td><input type="radio" name="CO2_edclab" value="4" required></td>
+                  <td><input type="radio" name="CO2_edclab" value="3" required></td>
+                  <td><input type="radio" name="CO2_edclab" value="2" required></td>
+                  <td><input type="radio" name="CO2_edclab" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>3. Compare the operation of BJT and FET through their V-I characteristics</td>
+                  <td><input type="radio" name="CO3_edclab" value="5" required></td>
+                  <td><input type="radio" name="CO3_edclab" value="4" required></td>
+                  <td><input type="radio" name="CO3_edclab" value="3" required></td>
+                  <td><input type="radio" name="CO3_edclab" value="2" required></td>
+                  <td><input type="radio" name="CO3_edclab" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>4. Compare half wave and full wave rectifiers with and without filters</td>
+                  <td><input type="radio" name="CO4_edclab" value="5" required></td>
+                  <td><input type="radio" name="CO4_edclab" value="4" required></td>
+                  <td><input type="radio" name="CO4_edclab" value="3" required></td>
+                  <td><input type="radio" name="CO4_edclab" value="2" required></td>
+                  <td><input type="radio" name="CO4_edclab" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>5. Implement D.C. Regulated power supplies circuits using Zener and BJT</td>
+                  <td><input type="radio" name="CO5_edclab" value="5" required></td>
+                  <td><input type="radio" name="CO5_edclab" value="4" required></td>
+                  <td><input type="radio" name="CO5_edclab" value="3" required></td>
+                  <td><input type="radio" name="CO5_edclab" value="2" required></td>
+                  <td><input type="radio" name="CO5_edclab" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>6. Design and verify the self-biasing CE configuration circuit</td>
+                  <td><input type="radio" name="CO6_edclab" value="5" required></td>
+                  <td><input type="radio" name="CO6_edclab" value="4" required></td>
+                  <td><input type="radio" name="CO6_edclab" value="3" required></td>
+                  <td><input type="radio" name="CO6_edclab" value="2" required></td>
+                  <td><input type="radio" name="CO6_edclab" value="1" required></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <center><b>Signals and Systems Lab:<br>(16EC309)</b></center>
+            </td>
+            <td>
+              <table border="1" bgcolor="white" class="table table-dark">
+                <tr>
+                  <th>COURSE OUTCOMES</th>
+                  <th>5</th>
+                  <th>4</th>
+                  <th>3</th>
+                  <th>2</th>
+                  <th>1</th>
+
+                </tr>
+                <tr>
+                  <td>1. Illustrate signal representation techniques and signal characteristics</td>
+                  <td><input type="radio" name="CO1_sslab" value="5" required></td>
+                  <td><input type="radio" name="CO1_sslab" value="4" required></td>
+                  <td><input type="radio" name="CO1_sslab" value="3" required></td>
+                  <td><input type="radio" name="CO1_sslab" value="2" required></td>
+                  <td><input type="radio" name="CO1_sslab" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>2. Interpret the process of sampling and the effects of under sampling</td>
+                  <td><input type="radio" name="CO2_sslab" value="5" required></td>
+                  <td><input type="radio" name="CO2_sslab" value="4" required></td>
+                  <td><input type="radio" name="CO2_sslab" value="3" required></td>
+                  <td><input type="radio" name="CO2_sslab" value="2" required></td>
+                  <td><input type="radio" name="CO2_sslab" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>3. Design suitable filters to process the analog signals</td>
+                  <td><input type="radio" name="CO3_sslab" value="5" required></td>
+                  <td><input type="radio" name="CO3_sslab" value="4" required></td>
+                  <td><input type="radio" name="CO3_sslab" value="3" required></td>
+                  <td><input type="radio" name="CO3_sslab" value="2" required></td>
+                  <td><input type="radio" name="CO3_sslab" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>4. Contrast the signals in Time and Frequency domain through its respective tools</td>
+                  <td><input type="radio" name="CO4_sslab" value="5" required></td>
+                  <td><input type="radio" name="CO4_sslab" value="4" required></td>
+                  <td><input type="radio" name="CO4_sslab" value="3" required></td>
+                  <td><input type="radio" name="CO4_sslab" value="2" required></td>
+                  <td><input type="radio" name="CO4_sslab" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>5. Determine the power content and power spectral density of the signal</td>
+                  <td><input type="radio" name="CO5_sslab" value="5" required></td>
+                  <td><input type="radio" name="CO5_sslab" value="4" required></td>
+                  <td><input type="radio" name="CO5_sslab" value="3" required></td>
+                  <td><input type="radio" name="CO5_sslab" value="2" required></td>
+                  <td><input type="radio" name="CO5_sslab" value="1" required></td>
+                </tr>
+                <tr>
+                  <td>6. Determine the Autocorrelation and power density spectrum of the processes</td>
+                  <td><input type="radio" name="CO6_sslab" value="5" required></td>
+                  <td><input type="radio" name="CO6_sslab" value="4" required></td>
+                  <td><input type="radio" name="CO6_sslab" value="3" required></td>
+                  <td><input type="radio" name="CO6_sslab" value="2" required></td>
+                  <td><input type="radio" name="CO6_sslab" value="1" required></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td><b>SIGNATURE:</b></td>
+            <td><input type="file" name="sign" onchange="return verifyImage(this.value);" id="sign" required>
+              <span id="sign_error" style="color: red; font-size: 15px;"></span>
+
+              <h4 style="color: red;">*Please insert the signature image with your JNTU Number.</h4>
+            </td>
+          </tr>
+
+        </table>
+
+        <div>
+          <input id="button1" type="submit" name="submit" value="Submit" style="border-radius: 10%">
+          <input id="button2" type="reset" name="reset" value="Reset" style="border-radius: 10%">
+        </div>
+
+
+      </form>
+      <script>
+        function verifyImage(e) {
+
+          var image = document.getElementById('sign').value;
+          // alert(image);
+          var type = image.split(".");
+          // alert(type[1]);
+          if (type[1] == 'png' || type[1] == 'jpg' || type[1] == 'jpeg' || type[1] == 'PNG' || type[1] == 'JPEG' || type[1] == 'JPG') {
+            // alert("hii");
+            document.getElementById("sign_error").innerHTML = "";
+            return true;
+          } else {
+            // alert("not hii");
+            document.getElementById("sign_error").innerHTML = "Please choose png or jpg or jpeg file.";
+            return false;
+          }
+        }
+
+        function verifynumber(e){
+        	var num = document.getElementById('num').value;
+
+        	if(num==""){
+        		document.getElementById("sign_error").innerHTML = "Please enter a correct phone number.";
+        		return false;
+        	}
+        	if(isNaN(num)){
+        		document.getElementById("sign_error").innerHTML = "Please enter only numbers.";
+        		return false;
+        	}
+        	if(num.length<10){
+        		document.getElementById("sign_error").innerHTML = "Please enter 10 digits.";
+        		return false;
+        	}
+        	if(num.length>10){
+        		document.getElementById("sign_error").innerHTML = "Please enter 10 digits.";
+        		return false;
+        	}
+        }
+
+
+      </script>
+  </body>
+
+</html>
